@@ -1,10 +1,12 @@
+
+=begin
 def prime?(numbers)
   (2..(numbers - 1)).each do |num|
     return false if numbers % num
   end
   true
 end
-=begin
+
 def prime?(numbers)
   (2..numbers - 1).each {|num| return false if (numbers % num) == 0 || numbers <= 0}
   true
